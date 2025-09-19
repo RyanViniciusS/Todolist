@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "418ef1b5-cc68-492a-a37a-038b8be319b7",
+		"name": "TodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42550241",
+		"_collection_link": "https://www.postman.com/a33333-2027/workspace/estudo-java/collection/42550241-418ef1b5-cc68-492a-a37a-038b8be319b7?action=share&source=collection_link&creator=42550241"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": []
+		},
+		{
+			"name": "Tasks",
+			"item": []
+		},
+		{
+			"name": "Atualizar tarefas",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "teste",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ryan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Terminar o relatório mensal com muitas informações extras que excedem cinquenta caracteres\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tasks/b0d63b4e-5dd4-4368-9264-cb3270d582f0",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tasks",
+						"b0d63b4e-5dd4-4368-9264-cb3270d582f0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
