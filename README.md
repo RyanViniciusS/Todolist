@@ -9,33 +9,31 @@ Projeto de gerenciador de tarefas desenvolvido em **Java 24** com **Spring Boot 
 ### 1. Com Maven local
 
 # Compilar o projeto
+
 ./mvnw clean install
 
 # Rodar a aplicação
+
 ./mvnw spring-boot:run
-
-
 
 ## 📬 Testando a API
 
-1. Abra o **Postman**.  
-2. Importe a coleção:
+1. Abra o **Postman**.
+2. [Importar coleção Postman](postman/TodoList.postman_collection.json)
+3. Teste os endpoints da aplicação.
 
-postman/Todolist.postman_collection.json
-
-3. Teste endpoints:
+4. Teste endpoints:
 
 - `POST /user/create` → criar usuário
 - `POST /task/create` → criar tarefa
 - `GET /task/list` → listar tarefas
 - `PUT /task/update` → atualizar tarefa
 
-
 ---
 
 ## 🔧 Observações
 
-- Projeto usa **Lombok** para getters/setters.  
-- Banco **H2** é em memória, todos os dados são perdidos ao reiniciar.  
-- **Docker** garante que a aplicação rode isolada em qualquer máquina.  
+- Projeto usa **Lombok** para getters/setters.
+- Banco **H2** é em memória, todos os dados são perdidos ao reiniciar.
+- **Docker** garante que a aplicação rode isolada em qualquer máquina.
 - Se você quiser persistência real, troque para **PostgreSQL** ou **MySQL** e configure `application.properties`.
